@@ -36,7 +36,13 @@
     }
 
     a{
-        color:var(--accent); text-decoration:none}
+        color:var(--accent); text-decoration:none
+    text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+    }a:hover {
+  color: var(--accent-2);
+  opacity: 0.85;
+}
     img{
         max-width:100%;display:block}
 
@@ -544,7 +550,7 @@ p.tagline {
       </div>
       <h1 class="hero-title">Welcome to my Profile</h1>
       <p class="tagline"> Padma Sree Modini</p>
-      <div class="typed" aria-live="polite"><span id="typedText">Full-Stack Web Developer</span><span class="cursor"></span></div>
+      <div class="typed" aria-live="polite"><span id="typedText">Software Engineer | Full Stack & DevOps</span><span class="cursor"></span></div>
       <div class="cta-row" role="group" aria-label="Call to action">
         <a class="btn" href="https://drive.google.com/file/d/15FM7bLmsqJD4FlE9l3y5kviJLeE9p0Jf/view?usp=drive_link">View Resume</a>
         <a class="btn" href="#contact">Hire Me</a>
@@ -559,7 +565,7 @@ p.tagline {
     <section id="about">
       <h2>About Me</h2>
       <div class="card">
-        <p>Hello! I'm <strong>Padma Sree Modini</strong>,who build and ship full-stack web applications across the complete SDLC — React frontends, Node.js REST APIs, MongoDB databases, and containerized deployments on AWS using Docker, Kubernetes, and Jenkins CI/CD. Three internships. <b>One Best Performer Award </b>in Web Development. Every project live and deployed. Currently seeking Software Engineer roles where I can write clean code, solve real problems, and grow fast.=</p>
+        <p>Hello! I'm <strong>Padma Sree Modini</strong>,who build and ship full-stack web applications across the complete SDLC — React frontends, Node.js REST APIs, MongoDB databases, and containerized deployments on AWS using Docker, Kubernetes, and Jenkins CI/CD. Three internships. <b>One Best Performer Award </b>in Web Development. Every project live and deployed. Currently seeking Software Engineer roles where I can write clean code, solve real problems, and grow fast.</p>
         <div style="margin-top:1rem;display:flex;gap:0.6rem;flex-wrap:wrap">
           <span style="background:rgba(127,231,255,0.06);padding:0.45rem 0.7rem;border-radius:8px;border:1px solid rgba(127,231,255,0.05);font-weight:700;color:var(--accent)">Open to work</span>
         
@@ -727,22 +733,6 @@ p.tagline {
             </div>
           </div>
         </article>
-      <article class="project-card" tabindex="0">
-          <div class="project-media" aria-hidden><svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="rgba(155,139,255,0.04)"/><path d="M5 12h14" stroke="rgba(155,139,255,0.8)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="project-body">
-            <h3 style="margin:0;color:var(--accent)">Travel Blog</h3>
-            <p style="color:var(--muted);margin:0.5rem 0">Wanderlust is a Simple Travelling Blog  developed using HTML, CSS, Bootstrap.
-Displays information and guide for travellers aids to plan their journeys and also share their experiences about destination.
-Focuses on clean design, accessibility.</p>
-            <div class="project-meta" style="margin-top:0.8rem">
-              <div class="project-links">
-                <a href="https://modinipadmasree.github.io/" target="_blank" rel="noopener"><i class="fas fa-link"></i> Live</a>
-                <a href="https://github.com/ModiniPadmaSree/ModiniPadmaSree.github.io" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
-              </div>
-              <div style="color:var(--muted);font-weight:700">HTML • CSS</div>
-            </div>
-          </div>
-        </article>
     </section>
 
     <div class="section-divider" aria-hidden></div>
@@ -755,13 +745,10 @@ Focuses on clean design, accessibility.</p>
           <h3 style="margin:0;color:var(--accent)"><a href="https://drive.google.com/file/d/1f8aV9PULDb2uwx_o6uTLXrfPES1kxNQm/view?usp=sharing">DevOps intern</a> </h3>
           <p class="company" style="margin:0.25rem 0;color:var(--muted)">EduBot | Dec 2025- Mar 2026 </p>
           <ul style="margin:0.5rem 0 0 1.1rem;color:var(--muted)">
-            <li>Built and managed CI/CD pipelines using GitHub, Jenkins, and ArgoCD for automated build and deployment workflows.
-
-</li>
-            <li>Containerised MERN applications using Docker and deployed them on Kubernetes clusters hosted on AWS EKS.
-
-</li><li>Integrated monitoring and logging tools including Prometheus, Grafana, and ELK stack for observability and performance tracking.</li>
-            <li> Automated deployment and scaling workflows using Helm charts and Linux scripting to improve release reliability.</li>
+            <li>Built and managed CI/CD pipelines using GitHub, Jenkins, and ArgoCD automating deployment workflows from code commit to production - reducing manula efforts</li>
+            <li>Containerised 2+ microservices, MERN applications(Resume Builder, Ecommerce) using Docker and deployed them on Kubernetes clusters on AWS EKS, creating isolated staging environments for consistent deployment validation.</li><li>Integrated monitoring and logging tools including Prometheus, Grafana, and ELK stack for observability and performance tracking.</li>
+            <li>Monitored applications using Prometheus, Grafana, and ELK Stack — enabling real-time incident detection and log-based root cause analysis</li>
+            <li> Developed Linux shell scripts and Helm charts to standardize and document deployments across environments.</li>
           </ul>
         </div>
       </div>
@@ -769,25 +756,19 @@ Focuses on clean design, accessibility.</p>
           <h3 style="margin:0;color:var(--accent)"><a href="https://drive.google.com/file/d/1YiClOPNlrzAuokbwIm8ENGd7Psnr3ySt/view?usp=drivesdk">MERN Stack intern</a> </h3>
           <p class="company" style="margin:0.25rem 0;color:var(--muted)">Blackbucks | May 2025-Jul 2025 </p>
           <ul style="margin:0.5rem 0 0 1.1rem;color:var(--muted)">
-            <li>Contributed to the development of an E-commerce store using the MERN stack.
-
-</li>
-            <li>Enhanced UI responsiveness with React.js and improved checkout flow.
-
-</li><li>Worked on integrating features like cart, product categories, and payment modules</li>
+            <li>Independently designed, developed and validated 5+ secure REST APIs using Node.js and Express.js — self-reviewed code structure, tested edge cases via Postman, and iterated based on functional testing outcomes.</li>
+            <li>Built e-commerce workflows for product catalog management, persistent carts, stripe payment integration and real-time search functionality using MERN stack</li>
+            <li>Developed responsive UIs using React.js and Bootstrap, optimized frontend state management and data fetching to improve performance and reduce server load.</li>
           </ul>
         </div>
           <div class="timeline-item card">
         <h3 style="margin:0;color:var(--accent)"><a href="https://drive.google.com/file/d/11ezpnpPzeDKN__AqxBs5210C-_g40uXC/view?usp=drivesdk">Web Developer intern</a> </h3>
           <p class="company" style="margin:0.25rem 0;color:var(--muted)">Elevate Labs | May 2025-Jun 2025 </p>
           <ul style="margin:0.5rem 0 0 1.1rem;color:var(--muted)">
-            <li>Built core applications including a Resume Builder and Blog platform.
-</li>
-            <li>Improved project scalability and responsiveness using React.js and MongoDB.</li>
+            <li>Built two production-deployed applications — an interactive resume builder and a responsive blog platform — using modular React.js component architecture, following the full SDLC from requirements to deployment.</li>
+            <li>Started with foundational mini-projects like Contact form validation, REST APIs, To-Do list and state management, which quickly translated into real application work.</li>
 
-<li>Developed mini-projects like contact form validation and to-do list apps for practice and learning.</li>
-
-<li>Recognized as BEST Performer for accomplishment of assigned tasks within deadline meeting all requirements.</li>
+<li>Proud to have received the Best Performer Award — the only one in Web Development — for delivering quality work consistently on time.</li>
         </div>
     </section>
 
